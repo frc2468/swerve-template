@@ -627,7 +627,9 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{AAAA6BD7-607B-40CC-8B11-2DDC694C3792}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/Swerve Robot Project Template/Target/Paths/home/lvuser/natinst/bin/Paths/Swerve Robot Project Template_Paths_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
@@ -636,7 +638,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/Paths/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E9150C22-7594-49DE-AD64-6D5847FD0C0B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{76448D7D-7A1E-4DE5-A770-607FD564CAD6}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
