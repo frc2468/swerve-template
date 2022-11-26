@@ -222,13 +222,12 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Rotate Polygon.vi" Type="VI" URL="../../Swerve Experiments/Support Code/Swerve Teleop Tester/Drawing Utilities/Rotate Polygon.vi"/>
+			<Item Name="Rotate Polygon.vi" Type="VI" URL="../../Swerve Robot Project Template/Support Code/Swerve Teleop Tester/Drawing Utilities/Rotate Polygon.vi"/>
 			<Item Name="Draw Arrow.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Draw Arrow.vi"/>
 			<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
 			<Item Name="Create Box.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Create Box.vi"/>
 			<Item Name="Pod Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Pod Drawing Utility.vi"/>
 			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
-			<Item Name="Pod Setpoints.ctl" Type="VI" URL="../../swerve/ctl/Pod Setpoints.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC_Dashboard" Type="EXE">
