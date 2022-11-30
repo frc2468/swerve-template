@@ -43,10 +43,10 @@
 		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
 		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
 		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
-		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
+		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -119,6 +119,7 @@ AddOutputFilter chunkFilter
 		<Item Name="SubSystems.vi" Type="VI" URL="../SubSystems.vi"/>
 		<Item Name="Pigeon2 Field Centric.vi" Type="VI" URL="../../swerve/hardware/Pigeon2 Field Centric.vi"/>
 		<Item Name="Auto Align With Limelight.vi" Type="VI" URL="../../swerve/hardware/Auto Align With Limelight.vi"/>
+		<Item Name="Set Pod Setpoints.vi" Type="VI" URL="../../swerve/hardware/Set Pod Setpoints.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Command Status Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Command Status Info.ctl"/>
@@ -506,6 +507,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_UtilitiesFRC FPGATime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC FPGATime.vi"/>
 				<Item Name="NT Server.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Server.vi"/>
 				<Item Name="NT Globals.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Globals.vi"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -526,14 +528,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Get Sensor Values.vi" Type="VI" URL="../../swerve/hardware/Get Sensor Values.vi"/>
 			<Item Name="Forward Kinematics.vi" Type="VI" URL="../../swerve/math/Forward Kinematics.vi"/>
 			<Item Name="Inverse Kinematics.vi" Type="VI" URL="../../swerve/math/Inverse Kinematics.vi"/>
-			<Item Name="Set Pod Setpoints.vi" Type="VI" URL="../../swerve/hardware/Set Pod Setpoints.vi"/>
 			<Item Name="Set Output.vi" Type="VI" URL="../../swerve/hardware/Set Output.vi"/>
 			<Item Name="Calibrate Steering Encoders.vi" Type="VI" URL="../../swerve/hardware/Calibrate Steering Encoders.vi"/>
 			<Item Name="Field To Robot Centric.vi" Type="VI" URL="../../swerve/math/Field To Robot Centric.vi"/>
 			<Item Name="Radii.ctl" Type="VI" URL="../../swerve/ctl/Radii.ctl"/>
 			<Item Name="Get Inverse Kinematics Matrix.vi" Type="VI" URL="../../swerve/math/Get Inverse Kinematics Matrix.vi"/>
 			<Item Name="4 Motor Set.ctl" Type="VI" URL="../../swerve/ctl/4 Motor Set.ctl"/>
-			<Item Name="Set PID Coefficients.vi" Type="VI" URL="../../swerve/hardware/Set PID Coefficients.vi"/>
 			<Item Name="Feet per second to Ticks per second.vi" Type="VI" URL="../../swerve/conversion/Feet per second to Ticks per second.vi"/>
 			<Item Name="Degrees To Ticks.vi" Type="VI" URL="../../swerve/conversion/Degrees To Ticks.vi"/>
 			<Item Name="Swerve Motors.ctl" Type="VI" URL="../../swerve/ctl/Swerve Motors.ctl"/>
@@ -549,6 +549,13 @@ AddOutputFilter chunkFilter
 			<Item Name="ntcoreffi.dll" Type="Document" URL="ntcoreffi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Draw Arrow.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Draw Arrow.vi"/>
+			<Item Name="Draw Pod Actual.vi" Type="VI" URL="../../Swerve Dashboard Template/Draw Pod Actual.vi"/>
+			<Item Name="Create Box.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Create Box.vi"/>
+			<Item Name="Pod Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Pod Drawing Utility.vi"/>
+			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
+			<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
+			<Item Name="Calculate Differences.vi" Type="VI" URL="../../Swerve Dashboard Template/Calculate Differences.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -567,6 +574,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2136F65-FD06-4AC9-A317-10E44B9EF7A4}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>

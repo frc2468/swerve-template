@@ -22,6 +22,8 @@
 			<Item Name="Draw Robot.vi" Type="VI" URL="../Draw Robot.vi"/>
 		</Item>
 		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
+		<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
+		<Item Name="Calculate Differences.vi" Type="VI" URL="../Calculate Differences.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
@@ -224,7 +226,6 @@
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Rotate Polygon.vi" Type="VI" URL="../../Swerve Robot Project Template/Support Code/Swerve Teleop Tester/Drawing Utilities/Rotate Polygon.vi"/>
 			<Item Name="Draw Arrow.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Draw Arrow.vi"/>
-			<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
 			<Item Name="Create Box.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Create Box.vi"/>
 			<Item Name="Pod Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Pod Drawing Utility.vi"/>
 			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
