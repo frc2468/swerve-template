@@ -120,6 +120,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Pigeon2 Field Centric.vi" Type="VI" URL="../../swerve/hardware/Pigeon2 Field Centric.vi"/>
 		<Item Name="Auto Align With Limelight.vi" Type="VI" URL="../../swerve/hardware/Auto Align With Limelight.vi"/>
 		<Item Name="Set Pod Setpoints.vi" Type="VI" URL="../../swerve/hardware/Set Pod Setpoints.vi"/>
+		<Item Name="Optimize Pod Setpoints.vi" Type="VI" URL="../../swerve/math/Optimize Pod Setpoints.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Command Status Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Command Status Info.ctl"/>
@@ -540,7 +541,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Pod Setpoints.ctl" Type="VI" URL="../../swerve/ctl/Pod Setpoints.ctl"/>
 			<Item Name="Ticks per decisecond to Feet per second.vi" Type="VI" URL="../../swerve/conversion/Ticks per decisecond to Feet per second.vi"/>
 			<Item Name="Ticks To Degrees.vi" Type="VI" URL="../../swerve/conversion/Ticks To Degrees.vi"/>
-			<Item Name="Inverse Kinematics Solution to Pod Setpoints.vi" Type="VI" URL="../../swerve/math/Inverse Kinematics Solution to Pod Setpoints.vi"/>
 			<Item Name="Swerve CANCoders.ctl" Type="VI" URL="../../swerve/ctl/Swerve CANCoders.ctl"/>
 			<Item Name="Reduce Status Frame Frequency.vi" Type="VI" URL="../../swerve/hardware/Reduce Status Frame Frequency.vi"/>
 			<Item Name="FRC_NetworkTablesLV.dll" Type="Document" URL="FRC_NetworkTablesLV.dll">
@@ -556,6 +556,9 @@ AddOutputFilter chunkFilter
 			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
 			<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
 			<Item Name="Calculate Differences.vi" Type="VI" URL="../../Swerve Dashboard Template/Calculate Differences.vi"/>
+			<Item Name="Set PID Coefficients.vi" Type="VI" URL="../../swerve/hardware/Set PID Coefficients.vi"/>
+			<Item Name="Inverse Kinematics Solution to Pod Setpoints.vi" Type="VI" URL="../../swerve/math/Inverse Kinematics Solution to Pod Setpoints.vi"/>
+			<Item Name="Swerve Drive.vi" Type="VI" URL="../../swerve/hardware/Swerve Drive.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
