@@ -112,6 +112,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Vision" Type="Folder" URL="../Vision">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Paths" Type="Folder" URL="../Paths">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 		<Item Name="Autonomous.vi" Type="VI" URL="../Autonomous.vi"/>
@@ -509,6 +512,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NT Server.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Server.vi"/>
 				<Item Name="NT Globals.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Globals.vi"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
+				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -559,6 +563,18 @@ AddOutputFilter chunkFilter
 			<Item Name="Set PID Coefficients.vi" Type="VI" URL="../../swerve/hardware/Set PID Coefficients.vi"/>
 			<Item Name="Inverse Kinematics Solution to Pod Setpoints.vi" Type="VI" URL="../../swerve/math/Inverse Kinematics Solution to Pod Setpoints.vi"/>
 			<Item Name="Swerve Drive.vi" Type="VI" URL="../../swerve/hardware/Swerve Drive.vi"/>
+			<Item Name="Versioned Load.vi" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/FileIO/Versioned Load.vi"/>
+			<Item Name="Single Cmd Info.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Single Cmd Info.ctl"/>
+			<Item Name="Overrides.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Overrides.ctl"/>
+			<Item Name="Angluar Limits.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Angluar Limits.ctl"/>
+			<Item Name="Drive Type.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Drive Type.ctl"/>
+			<Item Name="Path Type.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Path Type.ctl"/>
+			<Item Name="Trajectory Data.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Trajectory Data.ctl"/>
+			<Item Name="Segment Type.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Segment Type.ctl"/>
+			<Item Name="Availible Command systems for auto.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Availible Command systems for auto.ctl"/>
+			<Item Name="Limits.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Limits.ctl"/>
+			<Item Name="Convert Trajectory Data 4.0.vi" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/FileIO/Convert Trajectory Data 4.0.vi"/>
+			<Item Name="Convert Overrides.vi" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Util/Convert Overrides.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -601,6 +617,52 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_productName" Type="Str">FRC Robot Boot-up Deployment</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{B0F0D109-BC56-4F69-B33E-7E219BE9C215}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
+			</Item>
+			<Item Name="Paths" Type="Source Distribution">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{0DB4001A-4B99-4EDC-9C25-E846D110A972}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Paths</Property>
+				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
+				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[2]" Type="Path">/C/ProgramData/National Instruments/InstCache/20.0</Property>
+				<Property Name="Bld_excludedDirectory[3]" Type="Path">/C/Users/abhin/Documents/LabVIEW Data/2020(32-bit)/ExtraVILib</Property>
+				<Property Name="Bld_excludedDirectory[4]" Type="Path">instr.lib</Property>
+				<Property Name="Bld_excludedDirectory[4].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[5]" Type="Path">user.lib</Property>
+				<Property Name="Bld_excludedDirectory[5].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Paths</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{209284DE-FBFA-4795-A671-7D8DD5CD868B}</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/Swerve Robot Project Template/Target/Paths/home/lvuser/natinst/bin/Swerve Robot Project Template_Paths_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/Paths</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/Paths/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{478638A0-20A2-43DD-9E1B-FC55491F176C}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Target/Paths</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">Container</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/Target/data</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 		</Item>
 	</Item>
