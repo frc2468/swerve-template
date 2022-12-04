@@ -556,6 +556,10 @@ AddOutputFilter chunkFilter
 			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
 			<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
 			<Item Name="Calculate Differences.vi" Type="VI" URL="../../Swerve Dashboard Template/Calculate Differences.vi"/>
+			<Item Name="Motor Type.ctl" Type="VI" URL="../../swerve/ctl/Motor Type.ctl"/>
+			<Item Name="Swerve Drive.ctl" Type="VI" URL="../../swerve/ctl/Swerve Drive.ctl"/>
+			<Item Name="Swerve Absolute Encoders.ctl" Type="VI" URL="../../swerve/ctl/Swerve Absolute Encoders.ctl"/>
+			<Item Name="Absolute Encoder Type.ctl" Type="VI" URL="../../swerve/ctl/Absolute Encoder Type.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
