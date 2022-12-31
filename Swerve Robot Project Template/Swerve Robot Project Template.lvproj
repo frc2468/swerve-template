@@ -115,6 +115,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Paths" Type="Folder" URL="../Paths">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="test" Type="Folder" URL="../test">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 		<Item Name="Autonomous.vi" Type="VI" URL="../Autonomous.vi"/>
@@ -123,7 +126,13 @@ AddOutputFilter chunkFilter
 		<Item Name="Pigeon2 Field Centric.vi" Type="VI" URL="../../swerve/hardware/Pigeon2 Field Centric.vi"/>
 		<Item Name="Auto Align With Limelight.vi" Type="VI" URL="../../swerve/hardware/Auto Align With Limelight.vi"/>
 		<Item Name="Set Pod Setpoints.vi" Type="VI" URL="../../swerve/hardware/Set Pod Setpoints.vi"/>
-		<Item Name="Optimize Pod Setpoints.vi" Type="VI" URL="../../swerve/math/Optimize Pod Setpoints.vi"/>
+		<Item Name="Optimize Pod Setpoints.vi" Type="VI" URL="../../swerve/Math/Optimize Pod Setpoints.vi"/>
+		<Item Name="Swerve Drive.vi" Type="VI" URL="../../swerve/hardware/Swerve Drive.vi"/>
+		<Item Name="TIcks per decisecond to Rotations per second.vi" Type="VI" URL="../../swerve/Conversion/TIcks per decisecond to Rotations per second.vi"/>
+		<Item Name="Ticks to Rotations (Steer).vi" Type="VI" URL="../../swerve/Conversion/Ticks to Rotations (Steer).vi"/>
+		<Item Name="Rotations to Ticks.vi" Type="VI" URL="../../swerve/Conversion/Rotations to Ticks.vi"/>
+		<Item Name="Rotations to Ticks per decisecond.vi" Type="VI" URL="../../swerve/Conversion/Rotations to Ticks per decisecond.vi"/>
+		<Item Name="Ticks to Rotations (Drive).vi" Type="VI" URL="../../swerve/Conversion/Ticks to Rotations (Drive).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Command Status Info.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Framework/Command Status Info.ctl"/>
@@ -531,20 +540,20 @@ AddOutputFilter chunkFilter
 			<Item Name="Initialize 8 Falcon Swerve Drive.vi" Type="VI" URL="../../swerve/hardware/Initialize 8 Falcon Swerve Drive.vi"/>
 			<Item Name="Open CANCoders.vi" Type="VI" URL="../../swerve/hardware/Open CANCoders.vi"/>
 			<Item Name="Get Sensor Values.vi" Type="VI" URL="../../swerve/hardware/Get Sensor Values.vi"/>
-			<Item Name="Forward Kinematics.vi" Type="VI" URL="../../swerve/math/Forward Kinematics.vi"/>
-			<Item Name="Inverse Kinematics.vi" Type="VI" URL="../../swerve/math/Inverse Kinematics.vi"/>
+			<Item Name="Forward Kinematics.vi" Type="VI" URL="../../swerve/Math/Forward Kinematics.vi"/>
+			<Item Name="Inverse Kinematics.vi" Type="VI" URL="../../swerve/Math/Inverse Kinematics.vi"/>
 			<Item Name="Set Output.vi" Type="VI" URL="../../swerve/hardware/Set Output.vi"/>
 			<Item Name="Calibrate Steering Encoders.vi" Type="VI" URL="../../swerve/hardware/Calibrate Steering Encoders.vi"/>
-			<Item Name="Field To Robot Centric.vi" Type="VI" URL="../../swerve/math/Field To Robot Centric.vi"/>
+			<Item Name="Field To Robot Centric.vi" Type="VI" URL="../../swerve/Math/Field To Robot Centric.vi"/>
 			<Item Name="Radii.ctl" Type="VI" URL="../../swerve/ctl/Radii.ctl"/>
-			<Item Name="Get Inverse Kinematics Matrix.vi" Type="VI" URL="../../swerve/math/Get Inverse Kinematics Matrix.vi"/>
+			<Item Name="Get Inverse Kinematics Matrix.vi" Type="VI" URL="../../swerve/Math/Get Inverse Kinematics Matrix.vi"/>
 			<Item Name="4 Motor Set.ctl" Type="VI" URL="../../swerve/ctl/4 Motor Set.ctl"/>
-			<Item Name="Feet per second to Ticks per second.vi" Type="VI" URL="../../swerve/conversion/Feet per second to Ticks per second.vi"/>
-			<Item Name="Degrees To Ticks.vi" Type="VI" URL="../../swerve/conversion/Degrees To Ticks.vi"/>
+			<Item Name="Feet per second to Ticks per second.vi" Type="VI" URL="../../swerve/Conversion/Feet per second to Ticks per second.vi"/>
+			<Item Name="Degrees To Ticks.vi" Type="VI" URL="../../swerve/Conversion/Degrees To Ticks.vi"/>
 			<Item Name="Swerve Motors.ctl" Type="VI" URL="../../swerve/ctl/Swerve Motors.ctl"/>
 			<Item Name="Pod Setpoints.ctl" Type="VI" URL="../../swerve/ctl/Pod Setpoints.ctl"/>
-			<Item Name="Ticks per decisecond to Feet per second.vi" Type="VI" URL="../../swerve/conversion/Ticks per decisecond to Feet per second.vi"/>
-			<Item Name="Ticks To Degrees.vi" Type="VI" URL="../../swerve/conversion/Ticks To Degrees.vi"/>
+			<Item Name="Ticks per decisecond to Feet per second.vi" Type="VI" URL="../../swerve/Conversion/Ticks per decisecond to Feet per second.vi"/>
+			<Item Name="Ticks To Degrees.vi" Type="VI" URL="../../swerve/Conversion/Ticks To Degrees.vi"/>
 			<Item Name="Swerve CANCoders.ctl" Type="VI" URL="../../swerve/ctl/Swerve CANCoders.ctl"/>
 			<Item Name="Reduce Status Frame Frequency.vi" Type="VI" URL="../../swerve/hardware/Reduce Status Frame Frequency.vi"/>
 			<Item Name="FRC_NetworkTablesLV.dll" Type="Document" URL="FRC_NetworkTablesLV.dll">
@@ -553,16 +562,14 @@ AddOutputFilter chunkFilter
 			<Item Name="ntcoreffi.dll" Type="Document" URL="ntcoreffi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Draw Arrow.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Draw Arrow.vi"/>
+			<Item Name="Draw Arrow.vi" Type="VI" URL="../../swerve/Test/Inverse Kinematics Test/Draw Arrow.vi"/>
 			<Item Name="Draw Pod Actual.vi" Type="VI" URL="../../Swerve Dashboard Template/Draw Pod Actual.vi"/>
-			<Item Name="Create Box.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Create Box.vi"/>
-			<Item Name="Pod Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Pod Drawing Utility.vi"/>
-			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
-			<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
+			<Item Name="Create Box.vi" Type="VI" URL="../../swerve/Test/Inverse Kinematics Test/Create Box.vi"/>
+			<Item Name="Pod Drawing Utility.vi" Type="VI" URL="../../swerve/Test/Inverse Kinematics Test/Pod Drawing Utility.vi"/>
+			<Item Name="Arrow Drawing Utility.vi" Type="VI" URL="../../swerve/Test/Inverse Kinematics Test/Arrow Drawing Utility.vi"/>
+			<Item Name="Dashboard Swerve Visual.vi" Type="VI" URL="../../swerve/Test/Inverse Kinematics Test/Dashboard Swerve Visual.vi"/>
 			<Item Name="Calculate Differences.vi" Type="VI" URL="../../Swerve Dashboard Template/Calculate Differences.vi"/>
-			<Item Name="Set PID Coefficients.vi" Type="VI" URL="../../swerve/hardware/Set PID Coefficients.vi"/>
-			<Item Name="Inverse Kinematics Solution to Pod Setpoints.vi" Type="VI" URL="../../swerve/math/Inverse Kinematics Solution to Pod Setpoints.vi"/>
-			<Item Name="Swerve Drive.vi" Type="VI" URL="../../swerve/hardware/Swerve Drive.vi"/>
+			<Item Name="Inverse Kinematics Solution to Pod Setpoints.vi" Type="VI" URL="../../swerve/Math/Inverse Kinematics Solution to Pod Setpoints.vi"/>
 			<Item Name="Versioned Load.vi" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/FileIO/Versioned Load.vi"/>
 			<Item Name="Single Cmd Info.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Single Cmd Info.ctl"/>
 			<Item Name="Overrides.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Overrides.ctl"/>
@@ -575,6 +582,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Limits.ctl" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Types/Limits.ctl"/>
 			<Item Name="Convert Trajectory Data 4.0.vi" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/FileIO/Convert Trajectory Data 4.0.vi"/>
 			<Item Name="Convert Overrides.vi" Type="VI" URL="../../../bordeaux-pathinator/Bordeaux/Util/Convert Overrides.vi"/>
+			<Item Name="Set PID Coefficients.vi" Type="VI" URL="../../swerve/hardware/Set PID Coefficients.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
