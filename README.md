@@ -15,9 +15,9 @@ git clone https://github.com/frc2468/swerve-template.git
 git submodule update --init
 
 # To switch branches
-git checkout Auto
+git checkout <enter branch name>
 cd swerve
-git checkout Auto
+git checkout <enter branch name>
 
 # To update the repository in the future
 git pull --recurse-submodules
