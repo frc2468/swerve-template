@@ -18,4 +18,8 @@ git submodule update --init
 git checkout Auto
 cd swerve
 git checkout Auto
+
+# To update the repository in the future
+git pull --recurse-submodules
+git submodule update --recursive
 ```
